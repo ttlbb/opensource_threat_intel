@@ -1,0 +1,32 @@
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=001_abuse.sh
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=002_alexa.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=003_alienvault.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=004_antispam.imp.ch
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=005_blocklist.de
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=006_cisco.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=007_csirtg.io
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=008_cyren.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=009_danger.rulez.sk
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=010_dataplane.org
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=011_dragonresearchgroup.org
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=012_emergingthreats.net
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=013_malc0de.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=014_netlab_360_com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=015_nothink.org
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=016_openphish.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=017_osint_bambenekconsulting_com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=018_phishtank_com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=019_public-dns.info
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=020_spamhaus.org
+#curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=021_vxvault.net
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=022_watcherlab.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=023_badips.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=024_blocklist.greensnow.co
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=025_cinsscore.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=026_rutgers.edu
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=027_urlvir.com
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=028_urlquery.net
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=029_cybercrime-tracker.net
+curl http://localhost:6800/schedule.json -d project=opensource_threat_intel -d spider=030_malwaredomainlist.com
+
+

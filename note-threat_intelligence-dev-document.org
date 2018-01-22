@@ -1,0 +1,56 @@
+
+* base info
+   - data-type
+      | ip     | 0 |
+      | domain | 1 |
+      | url    | 2 |
+      | md5    | 3 |
+      | sha256 | 4 |
+      | sha1   | 5 |
+   - tags 标签说明
+     |  0 | Suspicious   | 可疑的         |
+     |  1 | DDos         | DDos攻击       |
+     |  2 | Exploits     | 漏洞攻击       |
+     |  3 | Spam Sources | 垃圾邮件       |
+     |  4 | Web  Attacks | Web攻击        |
+     |  5 | Scanners     | 扫描源         |
+     |  6 | Botnets      | 僵尸网络被控端 |
+     |  7 | Malware      | 恶意软件       |
+     |  8 | Phishing     | 钓鱼           |
+     |  9 | Proxy        | 代理           |
+     | 10 | C&C          | 僵尸网络控制端 |
+     | 11 | Whitelist    | 白名单         |
+     | 12 | Honeypot     | 蜜罐           |
+     | 13 | DGA          | 域名随机生成   |
+   - confidence  数据源的可信度
+     | (9-10) | Certain            |
+     | (7-8)  | Very Confident     |
+     | (6-7)  | Somewhat Confident |
+     | (5-6)  | Not Confident      |
+     | (5)    | "50/50 shot"       |
+     | (0-4)  | Informational Data |
+   - 统计表
+     
+     [[http://7xpyfe.com1.z0.glb.clouddn.com/blog/20170616/135122999.png]]
+   - 数据库内存储格式
+        + 录入机制:
+          同一数据源来的数据，威胁类型不变时，
+
+          只更新该类型记录更新时间,created_time不会变化
+     
+          当indicator 和 tag都变化的时候，才会录入一条新的数据
+        + 更新机制
+          每天通过created_time获取新怎么的数据
+          
+     #+BEGIN_SRC json
+     {
+        "indicator":"1.180.74.58",
+        "data_type":0,
+        "confidence":7,
+        "alive":true/false,
+        "updated_time":"2017-06-30T14:22:44"/"none",
+        "source":"blocklist.de",
+        "tag":5,
+        "created_time":"2017-06-30T14:22:44"
+     }
+     #+END_SRC
